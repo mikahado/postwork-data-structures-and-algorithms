@@ -1,17 +1,18 @@
 function reverseString(str) {
-  // type your code here
 
-    // Convert the string into an array of characters
-    let charArray = str.split('');
+  // SOLUTION 1
 
-    // Reverse the order of elements in the array
-    let reversedArray = charArray.reverse();
-  
-    // Join the elements of the array back into a string
-    let reversedStr = reversedArray.join('');
-  
-    // Return the reversed string
-    return reversedStr;
+  // ans = ""
+
+  // for (let i = str.length - 1; i >= 0; i--) {
+  //   ans += str[i]
+  // }
+
+  // return ans
+
+  // SOLUTION 2
+
+  return str.split("").reverse().join("")
 
 }
 
