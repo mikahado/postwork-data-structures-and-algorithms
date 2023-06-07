@@ -1,6 +1,38 @@
 function selectionSortRecursive(arr) {
-  // type your code here
+
+  // base case
+  if (arr.length === 0) {
+    return []
+  }
+  
+  const min = Math.min(...arr)
+  const minIndex = arr.indexOf(min)
+  arr.splice(minIndex, 1)
+
+  let sorted = selectionSortRecursive(arr)
+  sorted.unshift(min);
+  return sorted
 }
+
+
+
+
+  // function selectionSort(arr) {
+  //   const sorted = [];
+  
+  //   while (arr.length > 0) {
+  //     const min = Math.min(...arr);
+  //     const idx = arr.indexOf(min);
+  
+  //     sorted.push(min);
+  //     arr.splice(idx, 1);
+  //   }
+  
+  //   return sorted;
+  // }
+
+
+
 
 if (require.main === module) {
   // add your own tests in here
@@ -12,5 +44,6 @@ if (require.main === module) {
 
 module.exports = selectionSortRecursive;
 
-// Please add your pseudocode to this file
+// make an empty array to store the ordered array. 
+// while loop, that stores the minimum number, pushes it into ordered array, removes it from original array, then recusrively calls it. 
 // And a written explanation of your solution

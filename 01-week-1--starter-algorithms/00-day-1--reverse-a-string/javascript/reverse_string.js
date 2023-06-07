@@ -1,20 +1,30 @@
-function reverseString(str) {
+const reverseString = (str) => {
 
-  // SOLUTION 1
-
-  // ans = ""
-
-  // for (let i = str.length - 1; i >= 0; i--) {
-  //   ans += str[i]
-  // }
-
-  // return ans
-
-  // SOLUTION 2
-
-  return str.split("").reverse().join("")
+//  practice
 
 }
+
+
+
+
+
+// function reverseString(str) {
+
+//   // SOLUTION 1
+
+//   // ans = ""
+
+//   // for (let i = str.length - 1; i >= 0; i--) {
+//   //   ans += str[i]
+//   // }
+
+//   // return ans
+
+//   // SOLUTION 2
+
+//   return str.split("").reverse().join("")
+
+// }
 
 if (require.main === module) {
   // add your own tests in here
